@@ -1,0 +1,286 @@
+
+*{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+html{
+    font-size: 62.5%;   
+    overflow-x: hidden;
+    
+}
+.navbar {
+    
+    position: fixed;
+    border-radius: 10px 10px 20px 20px;
+}
+.navbar a{
+    text-decoration: none;
+}
+.header{
+    top: 0;right: 0;left: 0;
+    background-color: #723c0f;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    padding: 1.4rem 7%;
+    z-index: 999;
+}
+.header .merek{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header .merek i{
+    font-size: large;
+}
+.header .merek .judul {
+    color: #eeeded;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.header .navbar a{
+    font-size: 1.5rem;
+    margin-right: 3rem;
+    color:#eeeded;
+    font-weight: bold;
+}
+.header .navbar a:hover{
+    border: .1rem solid rgb(241, 234, 234);
+    padding-bottom: .3rem;
+}
+.header .logout i{
+    font-size: 2rem;
+    margin-right: 2rem;
+    color: #918f8f;
+    cursor: pointer;
+}
+.header .logout i:hover{
+    border: 1px solid rgb(143, 140, 140);
+    padding: 10px;
+    border-radius: 10px;
+}
+.navbar i{
+    font-size: 1.5rem;
+    margin-right: 7px;
+}
+
+#menu-bar{
+    display: none;
+}
+
+section{
+    padding: 2rem 7%;
+}
+.dasbor {
+    min-height: 100vh;
+    color: #4d0606;
+    display: flex;
+    align-items: center;
+    background-image: url(img/formlogin.jpg);
+    background-position: center;
+    background-size: cover;
+    background-position: center center;
+    mix-blend-mode: darken;
+
+}
+
+.dasbor p{
+    color: #bbbbbb;
+    font-weight: 500;
+}
+.box{
+    background-color: #eeeded;
+    border-radius: 10px;
+}
+.wadah h1{
+    color: #525050;
+    margin-top: 20px;
+    font-weight: 900;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.wadah p{
+    color: #918f8f;
+    margin-bottom: 20px;
+    font-weight: 800;
+    font-size: 2rem;
+    text-align: center;
+}
+.dasbor .dasborprintilan{
+    width: 50%;
+    float: left;
+    text-align: center;
+    padding: 4rem;
+}
+.dasbor .dasborprintilan h2{
+    font-size: 5rem;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+    line-height: 5rem;
+    color:#c2bdbd;
+    text-shadow: hsl(0, 1%, 27%);
+}
+.dasbor .dasborprintilan p{
+    font-size: 1.8rem;
+    line-height: 2;
+    margin-bottom: 2rem;
+}
+
+section{
+    padding: 2rem 7%;
+}
+
+
+.gerak{
+    margin-top: 5px;
+    background-color: rgb(148, 93, 42);
+   
+    
+}
+.gerak  .ygada .box {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 300px;
+}
+.gerak .ygada .box .img{
+    flex: 1 1 45rem;
+}
+.gerak .ygada .box .img img{
+    width: 100%;
+    padding: 5rem;
+}
+.wadah h1 span{
+    color:#6e1111;
+}
+.gerak .ygada .box .isi{
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+.gerak .ygada .box .isi h3{
+    font-size: 3.5rem;
+    color: #4d0606;
+  
+
+}
+.gerak .ygada .box .isi p{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    line-height: 1.8;
+    
+}
+.gerak .ygada .box .isi p:hover{
+    cursor: pointer;
+}
+.gerak .ygada .box .isi a{
+    font-size: 2rem;
+    cursor: pointer;
+}
+.gerak .ygada .box .content a:hover{
+    cursor: pointer;
+}
+.navbar a:hover{
+    background-color: #723c0f;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+footer .kontak{
+    padding: 1rem 0;
+    color:#4d0606;
+    text-align: center;
+   
+}
+footer .kontak a{
+    text-decoration: none;
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    font-size: 2rem;
+    background: black;
+    margin: 0 .3rem;
+    border-radius: 50%;
+
+}
+footer .kontak a:hover{
+    background: rgb(145, 78, 16);
+    color:  black;
+    border-radius: 10px;
+}
+
+.swiper-pagination-bullet{
+    background-color: black;
+}
+.swiper-button-next{
+    color: black;
+}
+.swiper-button-prev{
+    color: black;
+}
+
+
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 1.3rem 3rem;
+    }
+    .dasbor .dasborperintilan{
+        margin-left: 0;
+        width: 80%;
+    }
+}
+
+
+@media (max-width:768px) {
+  
+    #menu-bar{
+        display: inline-block;
+    }
+    .header .merek .judul{
+        color: #868585;
+    }
+    .header .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 25rem;
+        background-color: white;
+        height: 80vh;
+    }
+    .header .navbar.active{
+        right: 0;
+    }
+    .header .navbar a{
+        display: block;
+        font-size: 2rem;
+        color: black;
+        margin: 1.5rem;
+    }
+
+    .dasbor .dasborperintilan{
+        margin-left: 0;
+        width: 90%;
+    }
+    .gerak  .ygada .box{
+        height: 450px;
+    }
+}
+
+@media (max-width:600px){
+    html{
+        font-size: 50%;
+    }
+
+}

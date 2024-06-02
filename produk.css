@@ -1,0 +1,203 @@
+*{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+.produk .menu i{
+    padding: 10px;
+    font-size: 2.5rem;
+    
+}
+.produk .menu i:hover{
+    border-bottom: 1px solid grey;
+}
+html{
+    font-size: 62.5%;   
+    overflow-x: hidden;
+    
+}
+.navbar {
+    
+    position: fixed;
+    border-radius: 10px 10px 20px 20px;
+}
+.navbar a{
+    text-decoration: none;
+}
+.header{
+    top: 0;right: 0;left: 0;
+    background-color: #723c0f;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    padding: 1.4rem 7%;
+    z-index: 999;
+}
+.header .merek{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header .merek i{
+    font-size: large;
+}
+.header .merek .judul {
+    color: #eeeded;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.header .navbar a{
+    font-size: 1.5rem;
+    margin-right: 3rem;
+    color:#eeeded;
+    font-weight: bold;
+}
+.header .navbar a:hover{
+    border: .1rem solid rgb(241, 234, 234);
+    border-radius: 10px;
+    padding: 5px;
+    padding-bottom: .3rem;
+}
+.header .logout i{
+    font-size: 2rem;
+    margin-right: 2rem;
+    color: #918f8f;
+    cursor: pointer;
+}
+.header .logout i:hover{
+    border: 1px solid rgb(143, 140, 140);
+    padding: 10px;
+    border-radius: 10px;
+}
+.navbar i{
+    font-size: 1.5rem;
+    margin-right: 7px;
+}
+
+#menu-bar{
+    display: none;
+}
+
+.produk{
+    margin-top: 100px;
+    
+}
+.produk p{
+    text-align: center;
+    max-width: 30rem;
+    margin: auto;
+    font-weight: 100;
+    line-height: 1.6;
+    font-size: 1.5rem;
+}
+
+.produk h2{
+    margin-top: 3rem;
+    color: #868585;
+    text-align: center;
+    font-weight: 900;
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+}
+
+.produk h2 span{
+    color: #723c0f;
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+}
+.produk .wadah{
+  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    justify-content: center;
+}
+.menu:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    
+}
+
+.menu{
+    margin: 80px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 200px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+.produk .menu .card-menu img{
+    padding-top: 20px;
+    width: 150px;
+}
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 1.3rem 3rem;
+    }
+   
+}
+
+
+@media (max-width:768px) {
+    .produk .wadah{
+        display: flex;
+        flex-direction: row;
+        height: 500px;
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll ;
+    }
+    .produk .wadah .menu{
+        margin-top: 15px;
+    }
+    #menu-bar{
+        display: inline-block;
+    }
+    .header .merek .judul{
+        color: #868585;
+    }
+    .header .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 25rem;
+        background-color: white;
+        height: 80vh;
+    }
+    .header .navbar.active{
+        right: 0;
+    }
+    .header .navbar a{
+        display: block;
+        font-size: 2rem;
+        color: black;
+        margin: 1.5rem;
+    }
+
+    .dasbor .dasborperintilan{
+        margin-left: 0;
+        width: 90%;
+    }
+   
+}
+
+@media (max-width:600px){
+    html{
+        font-size: 50%;
+    }
+
+}
