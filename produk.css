@@ -13,7 +13,7 @@
     font-size: 2.5rem;
     
 }
-body{}
+
 .produk .menu i:hover{
     border-bottom: 1px solid grey;
 }
@@ -280,6 +280,14 @@ button:hover {
 @media (max-width:600px){
     html{
         font-size: 50%;
+    }
+    .contain{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cart{
+        width: 50%;
     }
 
 }
