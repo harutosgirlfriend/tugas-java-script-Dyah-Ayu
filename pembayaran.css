@@ -86,142 +86,39 @@ html{
 #menu-bar{
     display: none;
 }
-
-.produk{
+.wau{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bayar{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     margin-top: 100px;
-    
+    padding: 20px;
+    width: 50%;
+    border: 2px solid rgb(121, 114, 114);
+    border-radius: 20px;
+   
 }
-.contain{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.produk p{
-    text-align: center;
-    max-width: 30rem;
-    margin: auto;
-    font-weight: 100;
-    line-height: 1.6;
+.wau .bayar input{
+    padding-left: 10px ;
+    text-align: left;
+    border-radius: 20px;
+    width: 50%;
+    margin: 5px;
+    height: 30px;
     font-size: 1.5rem;
+    background-color: #b6b3b3;
 }
-
-.produk h2{
-    margin-top: 3rem;
-    color: #868585;
-    text-align: center;
-    font-weight: 900;
-    font-size: 2.6rem;
-    margin-bottom: 1rem;
-}
-
-.produk h2 span{
-    color: #723c0f;
-    text-align: center;
-    font-size: 2.6rem;
-    margin-bottom: 3rem;
-}
-.produk .wadah{
-  
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 5rem;
-    justify-content: center;
-}
-.menu:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-    
-}
-.produk .wadah{
-    display: flex;
-    flex-direction: row;
-    height: 400px;
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll ;
-}
-.menu{
-    margin: 80px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 200px;
-    border-radius: 10px;
-    border: 1px solid gray;
-}
-.menu button{
-    padding: 5px;
-    border-radius: 10px;
-}
-.produk .menu .card-menu img{
-    padding-top: 20px;
-    width: 150px;
-}
-.cart {
-    border-radius: 10px;
-    align-self: center;
-    border: 1px solid grey;
-    text-align: center;
-    width: 500px;
-    margin-bottom: 20px;
-}
-
-.cart h2 {
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 600;
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 10px;
-}
-
-.cart ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.cart li {
-    font-size: 2rem;
-    margin: 10px;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #723c0f;
-    cursor: pointer;
-    color: #fff;
-    border: none;
-    
-}
-
-.cart button{
-    background-color: #723c0f;
-    border-radius: 10px;
-    font-size: 2rem;
-}
-#bayar-dengan input{
-    
-    width: 500px;
-    height: 100px;
-    font-size: 2rem;
-}
-button:hover {
-    background-color: #b4140f;
-}
-
-
-
-
 
 @media (max-width: 768px) {
     .product {
         width: 100%;
     }
   
-    .cart{
-        margin-top: 50px;
-        width: 50%;
-    }
+    
 }
 
 @media (max-width:991px){
@@ -236,10 +133,31 @@ button:hover {
 
 
 @media (max-width:768px) {
+    .bayar{
+        
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+        padding: 20px;
+        width: 500px;
+        border: 2px solid rgb(121, 114, 114);
+        border-radius: 20px;
+       
+    }
+    .wau .bayar input{
+        padding-left: 10px;
+        text-align: left;
+        border-radius: 20px;
+        width: 80%;
+        margin: 5px;
+        height: 30px;
+        font-size: 1.5rem;
+        background-color: #b6b3b3;
+    }
     .produk .wadah{
         display: flex;
         flex-direction: row;
-        height: 400px;
+        height: 500px;
         scroll-snap-type: y mandatory;
         overflow-y: scroll ;
     }

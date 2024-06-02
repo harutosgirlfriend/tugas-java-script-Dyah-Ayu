@@ -34,8 +34,8 @@
     <nav class="navbar">
         <a href="dasbor.html" ><i class="fa-solid fa-gauge"></i>dasbor</a>
         <a href="produk.html"><i class="fa-solid fa-bread-slice"></i>produk kami</a>
-        <a href="keranjang.html"><i class="fa-solid fa-cart-shopping"></i>pesan</a>
-    </nav>
+        <a href="pembayaran.html"><i class="fa-solid fa-wallet"></i>pembayaran</a>
+     </nav>
 
     <div class="logout">
        <a href="index.html"><i class="fa-solid fa-right-from-bracket"></i></a> 
@@ -44,94 +44,108 @@
 </div>
 
   <section class="produk">
-    <h2><span>produk </span>kami</h2>
+    <h2><span>produk </span> kami</h2>
     <p>kami menjual berbagai jenis olahan gandum</p>
    <div class="wadah">
     <div class="menu">
-      <i class="fa-solid fa-cart-shopping"></i>
+      <a href="#keranjang"><button onclick="addToCart('sandwitch', 15000)"><i class="fa-solid fa-cart-shopping"></i></button> </a>
       <div class="card-menu">
         <img src="img/produk/roti 2.jpg" alt="">
         <h3 class="menu-judul">sandwitch</h3>
         <p class="harga">
-          $15
+          15000
         </p>
       </div>
     </div>
     <div class="menu">
-      <i class="fa-solid fa-cart-shopping"></i>
+      <a href="#keranjang"><button onclick="addToCart('sandwitch', 15000)"><i class="fa-solid fa-cart-shopping"></i></button> </a>
       <div class="card-menu">
         <img src="img/produk/roti 2.jpg" alt="">
         <h3 class="menu-judul">sandwitch</h3>
         <p class="harga">
-          $15
+          15000
         </p>
       </div>
     </div>
     <div class="menu">
-      <i class="fa-solid fa-cart-shopping"></i>
+      <a href="#keranjang"><button onclick="addToCart('sandwitch', 15000)"><i class="fa-solid fa-cart-shopping"></i></button> </a>
       <div class="card-menu">
         <img src="img/produk/roti 2.jpg" alt="">
         <h3 class="menu-judul">sandwitch</h3>
         <p class="harga">
-          $15
+          15000
         </p>
       </div>
     </div>
     <div class="menu">
-      <i class="fa-solid fa-cart-shopping"></i>
+      <a href="#keranjang"><button onclick="addToCart('sandwitch', 15000)"><i class="fa-solid fa-cart-shopping"></i></button> </a>
       <div class="card-menu">
         <img src="img/produk/roti 2.jpg" alt="">
         <h3 class="menu-judul">sandwitch</h3>
         <p class="harga">
-          $15
+          15000
         </p>
       </div>
     </div>
     <div class="menu">
-      <i class="fa-solid fa-cart-shopping"></i>
+      <a href="#keranjang"><button onclick="addToCart('sandwitch', 15000)"><i class="fa-solid fa-cart-shopping"></i></button> </a>
       <div class="card-menu">
         <img src="img/produk/roti 2.jpg" alt="">
         <h3 class="menu-judul">sandwitch</h3>
         <p class="harga">
-          $15
+          15000
         </p>
       </div>
     </div>
     <div class="menu">
-      <i class="fa-solid fa-cart-shopping"></i>
+      <a href="#keranjang"><button onclick="addToCart('sandwitch', 15000)"><i class="fa-solid fa-cart-shopping"></i></button> </a>
       <div class="card-menu">
         <img src="img/produk/roti 2.jpg" alt="">
         <h3 class="menu-judul">sandwitch</h3>
         <p class="harga">
-          $15
+          15000
         </p>
       </div>
     </div>
     <div class="menu">
-      <i class="fa-solid fa-cart-shopping"></i>
+      <a href="#keranjang"><button onclick="addToCart('sandwitch', 15000)"><i class="fa-solid fa-cart-shopping"></i></button> </a>
       <div class="card-menu">
         <img src="img/produk/roti 2.jpg" alt="">
         <h3 class="menu-judul">sandwitch</h3>
         <p class="harga">
-          $15
+          15000
         </p>
       </div>
     </div>
     <div class="menu">
-      <i class="fa-solid fa-cart-shopping"></i>
+      <a href="#keranjang"><button onclick="addToCart('sandwitch', 15000)"><i class="fa-solid fa-cart-shopping"></i></button> </a>
       <div class="card-menu">
         <img src="img/produk/roti 2.jpg" alt="">
         <h3 class="menu-judul">sandwitch</h3>
         <p class="harga">
-          $15
+          15000
         </p>
       </div>
     </div>
    </div>
+   <div class="contain" style="margin-top: 20px;">
+    <div class="cart" id="keranjang">
     
+      <h2>keranjang</h2>
+      <ul id="keranjang-item">
+         
+      </ul>
+      <h3>Total: rp<span id="total">0.00</span></h3>
+      <a href="pembayaran.html"><button onclick="checkout()">Checkout</button></a>
+  </div>
+  
+  </div>
+   </div>
+  
   </section>
 
   
+<script src="javascriptnya-tuan/roduk.js"></script>
 
     
 
